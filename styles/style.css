@@ -1,7 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .header, .hero, .footer {
@@ -10,23 +12,23 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    height: 40px;
     align-items: center;
-    padding: 8px 180px;
+    padding: 8px 20%;
+    gap: 16px;
 }
 
 .header-logo {
-    font-size: 24px;
-    color: #F9FAF8;    
+    width: 30px;
+    height: 30px;
+    color: #F9FAF8;   
+    flex: 0 0 auto;
 }
 
 .header-menu {
     display: flex;
-    gap: 10px;
     list-style-type: none;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .header-menu a {
@@ -38,11 +40,10 @@ body {
 
 .hero {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     flex: auto;
     gap: 32px;
-    padding: 32px 180px; 
+    padding: 32px 20%; 
 }
 
 .hero-left {
@@ -69,13 +70,48 @@ body {
    border-style: none;
    border-radius: 8px;
    height: 36px;
-   width: 100px;
-   
+   width: 100px;  
 }
 
 img {
     width: 500px;
-    height: 300px;
+    height: auto;
+}
+
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 10%;
+}
+
+.featured-title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
+    align-self: center;
+    margin-bottom: 12px;
+}
+
+.featured-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
 }
 
 .footer {
