@@ -46,7 +46,7 @@ body {
     justify-content: space-between;
     gap: 16px;
     padding: 32px 20%; 
-    flex-wrap: wrap;
+    flex: auto;
 }
 
 .hero-left, .signup-left{
@@ -66,9 +66,9 @@ body {
     font-size: 18px;
 }
 
-.hero-right {
+.hero-right, .hero-left {
     align-self: center;
-    min-width: 175px;
+    width: 50%;
 }
 
 .hero-img {
